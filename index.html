@@ -4,154 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <title>Super Tic Tac Toe</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <h1>welcome to super tic tac toe</h1>
-        </nav>
-    </header>
-
-    <div class="GameBoard">
-        <div class="supergrid">
-
-            <!-- Row 1 -->
-            <div class="container bt-0 bl-0">
-                <div class="box bt-0 bl-0"><span class="boxtext"></span></div>
-                <div class="box bt-0"><span class="boxtext"></span></div>
-                <div class="box bt-0 br-0"><span class="boxtext"></span></div>
-                <div class="box bl-0"><span class="boxtext"></span></div>
-                <div class="box"><span class="boxtext"></span></div>
-                <div class="box br-0"><span class="boxtext"></span></div>
-                <div class="box bb-0 bl-0"><span class="boxtext"></span></div>
-                <div class="box bb-0"><span class="boxtext"></span></div>
-                <div class="box bb-0 br-0"><span class="boxtext"></span></div>
-            </div>
-            <!-- top-left -->
-
-            <div class="container bt-0">
-                <div class="box bt-0 bl-0"><span class="boxtext"></span></div>
-                <div class="box bt-0"><span class="boxtext"></span></div>
-                <div class="box bt-0 br-0"><span class="boxtext"></span></div>
-                <div class="box bl-0"><span class="boxtext"></span></div>
-                <div class="box"><span class="boxtext"></span></div>
-                <div class="box br-0"><span class="boxtext"></span></div>
-                <div class="box bb-0 bl-0"><span class="boxtext"></span></div>
-                <div class="box bb-0"><span class="boxtext"></span></div>
-                <div class="box bb-0 br-0"><span class="boxtext"></span></div>
-            </div> <!-- top-center -->
-            <div class="container bt-0 br-0">
-                <div class="box bt-0 bl-0"><span class="boxtext"></span></div>
-                <div class="box bt-0"><span class="boxtext"></span></div>
-                <div class="box bt-0 br-0"><span class="boxtext"></span></div>
-                <div class="box bl-0"><span class="boxtext"></span></div>
-                <div class="box"><span class="boxtext"></span></div>
-                <div class="box br-0"><span class="boxtext"></span></div>
-                <div class="box bb-0 bl-0"><span class="boxtext"></span></div>
-                <div class="box bb-0"><span class="boxtext"></span></div>
-                <div class="box bb-0 br-0"><span class="boxtext"></span></div>
-            </div>
-            <!-- top-right -->
-
-            <!-- Row 2 -->
-
-
-            <div class="container bl-0">
-                <div class="box bt-0 bl-0"><span class="boxtext"></span></div>
-                <div class="box bt-0"><span class="boxtext"></span></div>
-                <div class="box bt-0 br-0"><span class="boxtext"></span></div>
-                <div class="box bl-0"><span class="boxtext"></span></div>
-                <div class="box"><span class="boxtext"></span></div>
-                <div class="box br-0"><span class="boxtext"></span></div>
-                <div class="box bb-0 bl-0"><span class="boxtext"></span></div>
-                <div class="box bb-0"><span class="boxtext"></span></div>
-                <div class="box bb-0 br-0"><span class="boxtext"></span></div>
-            </div>
-            <!-- middle-left -->
-            <div class="container">
-                <div class="box bt-0 bl-0"><span class="boxtext"></span></div>
-                <div class="box bt-0"><span class="boxtext"></span></div>
-                <div class="box bt-0 br-0"><span class="boxtext"></span></div>
-                <div class="box bl-0"><span class="boxtext"></span></div>
-                <div class="box"><span class="boxtext"></span></div>
-                <div class="box br-0"><span class="boxtext"></span></div>
-                <div class="box bb-0 bl-0"><span class="boxtext"></span></div>
-                <div class="box bb-0"><span class="boxtext"></span></div>
-                <div class="box bb-0 br-0"><span class="boxtext"></span></div>
-            </div>
-            <!-- middle-center -->
-            <div class="container br-0">
-                <div class="box bt-0 bl-0"><span class="boxtext"></span></div>
-                <div class="box bt-0"><span class="boxtext"></span></div>
-                <div class="box bt-0 br-0"><span class="boxtext"></span></div>
-                <div class="box bl-0"><span class="boxtext"></span></div>
-                <div class="box"><span class="boxtext"></span></div>
-                <div class="box br-0"><span class="boxtext"></span></div>
-                <div class="box bb-0 bl-0"><span class="boxtext"></span></div>
-                <div class="box bb-0"><span class="boxtext"></span></div>
-                <div class="box bb-0 br-0"><span class="boxtext"></span></div>
-            </div>
-            <!-- middle-right -->
-
-            <!-- Row 3 -->
-            <div class="container bb-0 bl-0">
-                <div class="box bt-0 bl-0"><span class="boxtext"></span></div>
-                <div class="box bt-0"><span class="boxtext"></span></div>
-                <div class="box bt-0 br-0"><span class="boxtext"></span></div>
-                <div class="box bl-0"><span class="boxtext"></span></div>
-                <div class="box"><span class="boxtext"></span></div>
-                <div class="box br-0"><span class="boxtext"></span></div>
-                <div class="box bb-0 bl-0"><span class="boxtext"></span></div>
-                <div class="box bb-0"><span class="boxtext"></span></div>
-                <div class="box bb-0 br-0"><span class="boxtext"></span></div>
-            </div>
-            <!-- bottom-left -->
-            <div class="container ">
-                <div class="box bt-0 bl-0"><span class="boxtext"></span></div>
-                <div class="box bt-0"><span class="boxtext"></span></div>
-                <div class="box bt-0 br-0"><span class="boxtext"></span></div>
-                <div class="box bl-0"><span class="boxtext"></span></div>
-                <div class="box"><span class="boxtext"></span></div>
-                <div class="box br-0"><span class="boxtext"></span></div>
-                <div class="box bb-0 bl-0"><span class="boxtext"></span></div>
-                <div class="box bb-0"><span class="boxtext"></span></div>
-                <div class="box bb-0 br-0"><span class="boxtext"></span></div>
-            </div>
-            <!-- bottom-center -->
-            <div class="container bb-0 br-0">
-                <div class="box bt-0 bl-0"><span class="boxtext"></span></div>
-                <div class="box bt-0"><span class="boxtext"></span></div>
-                <div class="box bt-0 br-0"><span class="boxtext"></span></div>
-                <div class="box bl-0"><span class="boxtext"></span></div>
-                <div class="box"><span class="boxtext"></span></div>
-                <div class="box br-0"><span class="boxtext"></span></div>
-                <div class="box bb-0 bl-0"><span class="boxtext"></span></div>
-                <div class="box bb-0"><span class="boxtext"></span></div>
-                <div class="box bb-0 br-0"><span class="boxtext"></span></div>
-            </div>
-        </div>
-
-
+    <div>
+        <header>
+            <h1>Super Tic Tac Toe</h1>
+        </header>
+    </div>
+    <div class="gameboard">
+        <div id="bigboard" class="board"></div>
         <div class="gameinfo">
-            <p>So, hello user this is your friendly developer Harsh Ray.</p>
-            <h3>welcome :)</h3>
-            <p>to my super tic tac toe.</p>
-            <p>If you like this, rate this game.<br>
-                You can also check the tic tac toe developed by me.</p>
+            <h1>welcome , </h1><br>
+            <ul>
+                <li>Hello users,I am Harsh your freindly developer here with a new game.</li>
+                <li>you can also go to my <a href="">portfiolo </a>to check for other games and projects and to <br> get
+                    to know more about me.</li>
+            </ul>
+            <h3>Game rules</h3>
+            <ul>
 
-            <div>
-                <span class="info">Turn for x</span><br>
-                <button id="reset">reset</button>
-                <div class="imgbox">
-                    <img src="./assets/excited.gif" alt="">
+                <li>First move is random but for x.</li>
+                <li>second move will be the move in the bigger box corresponding to the smaller block.</li>
+                <li>then the game will be continued until 1 of the player has obtained either victory in 3 consecutive
+                    bigger boxes</li>
+                <li>or there is no further moves remaining</li>
+                <li>also,if one of the big block is completed that is someone has won it then the corrsponding move to
+                    it will be random.</li>
+            </ul>
+            <div class="meta">
+                <button id="resetBtn" class="btn">Reset</button>
+                <div class="small muted" id="message">First player: X</div>
+                <div class="ingbox">
+                    <img src="./assets/excited.gif" alt="winner-gif" class="winner">
                 </div>
             </div>
         </div>
     </div>
-
     <script src="./script.js"></script>
 </body>
 
