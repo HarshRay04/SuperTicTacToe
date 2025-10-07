@@ -148,18 +148,25 @@ function onCellClick(e) {
 // Check winner logic
 function checkWinner(arr) {
     for (const [a, b, c] of WIN_LINES)
-        if (arr[a] && arr[a] === arr[b] && arr[a] === arr[c])
+        if (arr[a] && arr[a] === arr[b] && arr[a] === arr[c]) {
             return arr[a];
+        }
     return 0;
 }
 
 // Game finished
 function finishGame() {
-    if (outerWin === 3)
-        message.textContent = 'Game tied!';
-    else
-        message.textContent = `Winner: ${outerWin === 1 ? 'X' : 'O'}`;
+    const gif = document.querySelector('.imgbox img'); // select the gif
 
+    if (outerWin === 3) {
+        message.textContent = 'Game tied!';
+        gif.style.width = "0"; // hide gif for tie
+    } else {
+        message.textContent = `Winner: ${outerWin === 1 ? 'X' : 'O'}`;
+        gif.style.width = "200px"; // show gif when a player wins
+    }
+
+    // disable all cells
     for (let i = 0; i < 9; i++) {
         const miniEl = bigboardEl.children[i].firstChild;
         for (let c = 0; c < 9; c++)
@@ -177,6 +184,8 @@ function reset() {
     currentPlayer = 1;
     nextAllowed = -1;
     message.textContent = 'First Player: X';
+    // 🔥 Hide the gif
+    document.querySelector('.imgbox').getElementsByTagName('img')[0].style.width = "0";
     render();
 }
 
